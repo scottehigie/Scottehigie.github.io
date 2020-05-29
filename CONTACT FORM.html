@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>CONTACT FORM</title>
+		<script>
+		alert("Please the applicant should complete the entire form for better knowledge of the applicant.");
+		</script>
+		<style>
+			input {
+			background-color:silver;color:black;
+			}
+		</style>
+	</head>
+	<body align="center" style="background-color:purple;color:white;font-family:cursive">
+		<span style="font-size:200%;">Welcome, Please fill the form</span><br/>
+		<br/>
+		<form>
+			First Name:<input type="text" name="first name" required/>
+			Middle Name:<input type="text" name="middle name"/>
+			Last Name:<input type="text" name="last name" required/><br/>
+			<br/>
+			<input type="radio" name="gender" value="male" required/>Male
+			<input type="radio" name="gender" value="female" required/>Female<br/>
+			<br/>
+			Telephone:<input type="tel" name="telephone" required/>
+			Address:<input type="text" name="address" />
+			E-Mail Address:<input type="email" name="email" placeholder="scott@ehigie.we" required/><br/>
+			<br/>
+			Date of Birth:<input type="text" name="day of birth" placeholder="dd/mm/yyyy" required/><br/>
+			<br/>
+			Check days that you will be available:
+			<input type="checkbox" name="days available" value="1"/>Sunday
+			<input type="checkbox" name="days available" value="2"/>Monday
+			<input type="checkbox" name="days available" value="3"/>Tuesday
+			<input type="checkbox" name="days available" value="4"/>Wednesday
+			<input type="checkbox" name="days available" value="5"/>Thursday
+			<input type="checkbox" name="days available" value="6"/>Friday
+			<input type="checkbox" name="days available" value="7"/>Saturday<br/>
+			<br/>
+			Skill:<input type="text" name="skill"/>
+			Skill Level:<input type="text" name="skill level" list="skilllevel"/><br/>
+				<datalist id="skilllevel">
+				<option value="Sub-Skilled">
+				<option value="Skilled">
+				<option value="Expert">
+				</datalist>
+			<br/>
+			Password:<input type="password" name="password">
+			Confirm Password:<input type="password" name="confirm password"><br/>
+			<br/>
+			Please describe your view of this form design<br/>
+			<textarea style="background-color:silver;color:black" name="description"></textarea>
+			<br/>
+			<input style="background-color:purple;color:white" type="submit" value="Submit">
+		</form>
+	</body>
+</html>
